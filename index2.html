@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventech</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    height: 90px;
+}
+header h1{
+    margin-left: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+#accueil{
+    background-color: rgba(0, 128, 0, 0.589);
+    color: white;
+    height: 8.5rem;
+    text-align: center;
+    font-size: 30px;
+    padding-top:50px;
+}
+
+#a_propos{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 23px;
+    line-height: 22px;
+}
+
+#a_propos p{
+    margin-top: 30px;
+}
+
+#services{
+    margin-top: 40px;
+    background-color: #e9ecef;
+    text-align: center;
+    height: 34rem;
+}
+
+#services h2, #contact h2{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#services div{
+    margin: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact h2{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 22px;
+    width: 70%;
+    max-width: 600px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.863);
+    width: 70%;
+    max-width: 80px;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+textarea{
+    /* margin-top: 20px;
+    height: 30px;
+    width: 70%;
+    display: block; */
+    height: 37px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: white;
+    height: 40px;
+    
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>MonSiteWeb</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#a_propos">A propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- acueil -->
+    <section id="accueil">
+        <h1>Bienvenue sur notre site web</h1>
+        <p>Nous vous offrons les meilleurs services pour vos besoins en ligne.</p>
+    </section>
+
+    <!-- a propos -->
+    <section id="a_propos">
+        <h2>À propos de nous</h2>
+        <p>
+            Nous sommes une équipe passionnée par la création de site web interactifs et performants. Notre
+            mission est de fournir des solutions simples et efficaces pour tous vos besoins numériques.
+        </p>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+        <h2>Nos Services</h2>
+
+        <div class="dvp">
+            <h3>Developpement Web</h3>
+            <p>Nous créons des sites web personnalisés en fonction de vos besoins spécifiques</p>
+        </div>
+
+        <div class="cst">
+            <h3>Consultation</h3>
+            <p>Nous vous aidons à optimiser vos stratégies numériques pour atteindre vos objectifs.</p>
+        </div>
+
+        <div>
+            <h3>Design Graphique</h3>
+            <p>Nous créons des designs uniques pour améliorer l'expérience utilisateur de votre site.</p>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+
+        <form action=""></form>
+            <label for="nom">Nom et prenom :</label>
+            <input id="nom" type="text">
+
+            <label for="email">Email :</label>
+            <input type="email" name="" id="email" >
+
+            <label for="message">Message :</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+
+            <input class="btn" type="button" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 MonSiteWeb. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
